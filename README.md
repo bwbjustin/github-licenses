@@ -48,7 +48,7 @@ zLib License | ZLIB
 # CLI
 The CLI allows you to choose a license and write to a file. (Default: (cwd)/LICENSE)
 
-Format: Format: licenses (license) (option(s))
+Format: licenses (license) (option(s))
 
 Options:
 
