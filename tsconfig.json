@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "noImplicitUseStrict": false,
         "resolveJsonModule": true,
         "module": "commonjs",
         "target": "ES5",
