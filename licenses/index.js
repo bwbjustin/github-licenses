@@ -1,0 +1,36 @@
+const fs = require("fs");
+const path = require("path");
+
+module.exports = {
+	AFL: fs.readFileSync(path.resolve(__dirname, "AFL.txt")).toString(),
+	APACHE: fs.readFileSync(path.resolve(__dirname, "APACHE.txt")).toString(),
+	ART: fs.readFileSync(path.resolve(__dirname, "ART.txt")).toString(),
+	BSL: fs.readFileSync(path.resolve(__dirname, "BSL.txt")).toString(),
+	BSD2C: fs.readFileSync(path.resolve(__dirname, "BSD2C.txt")).toString(),
+	BSD3C: fs.readFileSync(path.resolve(__dirname, "BSD3C.txt")).toString(),
+	BSD3CC: fs.readFileSync(path.resolve(__dirname, "BSD3CC.txt")).toString(),
+	CC0: fs.readFileSync(path.resolve(__dirname, "CC0.txt")).toString(),
+	CCBY: fs.readFileSync(path.resolve(__dirname, "CCBY.txt")).toString(),
+	CCBYSA: fs.readFileSync(path.resolve(__dirname, "CCBYSA.txt")).toString(),
+	WTFPL: fs.readFileSync(path.resolve(__dirname, "WTFPL.txt")).toString(),
+	ECL: fs.readFileSync(path.resolve(__dirname, "ECL.txt")).toString(),
+	EPL1: fs.readFileSync(path.resolve(__dirname, "EPL1.txt")).toString(),
+	EPL2: fs.readFileSync(path.resolve(__dirname, "EPL2.txt")).toString(),
+	EUPL: fs.readFileSync(path.resolve(__dirname, "EUPL.txt")).toString(),
+	AGPL: fs.readFileSync(path.resolve(__dirname, "AGPL.txt")).toString(),
+	GPL2: fs.readFileSync(path.resolve(__dirname, "GPL2.txt")).toString(),
+	GPL3: fs.readFileSync(path.resolve(__dirname, "GPL3.txt")).toString(),
+	LGPL21: fs.readFileSync(path.resolve(__dirname, "LGPL21.txt")).toString(),
+	LGPL3: fs.readFileSync(path.resolve(__dirname, "LGPL3.txt")).toString(),
+	ISC: fs.readFileSync(path.resolve(__dirname, "ISC.txt")).toString(),
+	LPPL: fs.readFileSync(path.resolve(__dirname, "LPPL.txt")).toString(),
+	MSPL: fs.readFileSync(path.resolve(__dirname, "MSPL.txt")).toString(),
+	MIT: fs.readFileSync(path.resolve(__dirname, "MIT.txt")).toString(),
+	MPL: fs.readFileSync(path.resolve(__dirname, "MPL.txt")).toString(),
+	OSL: fs.readFileSync(path.resolve(__dirname, "OSL.txt")).toString(),
+	POSTSQL: fs.readFileSync(path.resolve(__dirname, "POSTSQL.txt")).toString(),
+	OFL: fs.readFileSync(path.resolve(__dirname, "OFL.txt")).toString(),
+	NCSA: fs.readFileSync(path.resolve(__dirname, "NCSA.txt")).toString(),
+	UNL: fs.readFileSync(path.resolve(__dirname, "UNL.txt")).toString(),
+	ZLIB: fs.readFileSync(path.resolve(__dirname, "ZLIB.txt")).toString()
+}
