@@ -1,7 +1,6 @@
 type License = (name: string, year?: number) => string;
 
 declare class Licenses {
-	public static List: string[];
 	public static AFL: License;
 	public static APACHE: License;
 	public static ART: License;
