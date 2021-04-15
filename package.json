@@ -1,10 +1,10 @@
 {
   "name": "github-licenses",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Get all the licenses that are included in GitHub.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "bin": {
-    "licenses": "bin/cli.js"
+    "licenses": "dist/bin/cli.js"
   },
   "repository": "github:bwbjustin/github-licenses",
   "keywords": [
