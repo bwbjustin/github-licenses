@@ -24,7 +24,7 @@ class Licenses {
 		"Creative Commons Zero v1.0 Universal",
 		"Creative Commons Attribution 4.0",
 		"Creative Commons Attribution Share Alike 4.0",
-		"Do What The Fuck You Want To Public License",
+		"Do What The F You Want To Public License",
 		"Educational Community License v2.0",
 		"Eclipse Public License 1.0",
 		"Eclipse Public License 2.0",
