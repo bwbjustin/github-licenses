@@ -2,7 +2,7 @@
 Get all the licenses that are included in GitHub.
 
 # Licenses
-All licenses are functions that take the name, and optionally, the year. For example:
+All licenses are functions that are listed below. Some take the name, and optionally, the year. For example:
 ```js
 const Licenses = require("github-licenses");
 Licenses.MIT("Deez Nuts"); // copyright 2021
@@ -11,39 +11,39 @@ Licenses.MIT("Deez Nuts", 2012); // copyright 2012
 
 The list of licenses that are included are:
 
-License | Function
---------|---------
-Academic Free License v3.0 | AFL
-Apache license 2.0 | APACHE
-Artistic license 2.0 | ART
-Boost Software License 1.0 | BSL
-BSD 2-clause "Simplified" license | BSD2C
-BSD 3-clause "New" or "Revised" license | BSD3C
-BSD 3-clause Clear license | BSD3CC
-Creative Commons Zero v1.0 Universal | CC0
-Creative Commons Attribution 4.0 | CCBY
-Creative Commons Attribution Share Alike 4.0 | CCBYSA
-Do What The F You Want To Public License | WTFPL
-Educational Community License v2.0 | ECL
-Eclipse Public License 1.0 | EPL1
-Eclipse Public License 2.0 | EPL2
-European Union Public License 1.1 | EUPL
-GNU Affero General Public License v3.0 | AGPL
-GNU General Public License v2.0 | GPL2
-GNU General Public License v3.0 | GPL3
-GNU Lesser General Public License v2.1 | LGPL21
-GNU Lesser General Public License v3.0 | LGPL3
-ISC | ISC
-LaTeX Project Public License v1.3c | LPPL
-Microsoft Public License | MSPL
-MIT | MIT
-Mozilla Public License 2.0 | MPL
-Open Software License 3.0 | OSL
-PostgreSQL License | POSTSQL
-SIL Open Font License 1.1 | OFL
-University of Illinois/NCSA Open Source License | NCSA
-The Unlicense | UNL
-zLib License | ZLIB
+License | Function | Takes name/year
+--------|----------|----------------
+Academic Free License v3.0 | AFL | No
+Apache license 2.0 | APACHE | No
+Artistic license 2.0 | ART | No
+Boost Software License 1.0 | BSL | No
+BSD 2-clause "Simplified" license | BSD2C | Yes
+BSD 3-clause "New" or "Revised" license | BSD3C | Yes
+BSD 3-clause Clear license | BSD3CC | Yes
+Creative Commons Zero v1.0 Universal | CC0 | No
+Creative Commons Attribution 4.0 | CCBY | No
+Creative Commons Attribution Share Alike 4.0 | CCBYSA | No
+Do What The F You Want To Public License | WTFPL | No
+Educational Community License v2.0 | ECL | No
+Eclipse Public License 1.0 | EPL1 | No
+Eclipse Public License 2.0 | EPL2 | No
+European Union Public License 1.1 | EUPL | No
+GNU Affero General Public License v3.0 | AGPL | No
+GNU General Public License v2.0 | GPL2 | No
+GNU General Public License v3.0 | GPL3 | No
+GNU Lesser General Public License v2.1 | LGPL21 | No
+GNU Lesser General Public License v3.0 | LGPL3 | No
+ISC | ISC | Yes
+LaTeX Project Public License v1.3c | LPPL | No
+Microsoft Public License | MSPL | No
+MIT | MIT | Yes
+Mozilla Public License 2.0 | MPL | No
+Open Software License 3.0 | OSL | No
+PostgreSQL License | POSTSQL | Yes
+SIL Open Font License 1.1 | OFL | Yes
+University of Illinois/NCSA Open Source License | NCSA | Yes
+The Unlicense | UNL | No
+zLib License | ZLIB | Yes
 
 # CLI
 The CLI allows you to choose a license and write to a file. (Default: (cwd)/LICENSE)

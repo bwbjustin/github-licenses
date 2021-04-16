@@ -13,6 +13,40 @@ const args = arg({
 	"-y": "--year"
 });
 
+const licenses = [
+	"AFL",
+	"APACHE",
+	"ART",
+	"BSL",
+	"BSD2C",
+	"BSD3C",
+	"BSD3CC",
+	"CC0",
+	"CCBY",
+	"CCBYSA",
+	"WTFPL",
+	"ECL",
+	"EPL1",
+	"EPL2",
+	"EUPL",
+	"AGPL",
+	"GPL2",
+	"GPL3",
+	"LGPL21",
+	"LGPL3",
+	"ISC",
+	"LPPL",
+	"MSPL",
+	"MIT",
+	"MPL",
+	"OSL",
+	"POSTSQL",
+	"OFL",
+	"NCSA",
+	"UNL",
+	"ZLIB"
+]
+
 const list = [
 	"Academic Free License v3.0",
 	"Apache license 2.0",
@@ -63,7 +97,7 @@ function cli() {
 		"List of Licenses:",
 		list.join("\n")
 	);
-	else if (Object.keys(Licenses).some(x => new RegExp(args._[0], "i").test(x))) {
+	else if (licenses.some(x => new RegExp(args._[0], "i").test(x))) {
 		if (!args["--name"]) return log("Please specify a name.");
 		try {
 			fs.writeFileSync(args["--output"] || path.resolve(process.cwd(), "LICENSE"), Licenses[args._[0]](args["--name"], args["--year"] || new Date().getFullYear()));
@@ -72,7 +106,7 @@ function cli() {
 			if (error.errno == -4068) log("This is the name of a directory! Please try again.");
 			else log("An error occurred when writing the license! Please try again.");
 		}
-	} else if (!Object.keys(Licenses).some(x => new RegExp(args._[0], "i").test(x))) log("Please specify a valid license name.");
+	} else if (!licenses.some(x => new RegExp(args._[0], "i").test(x))) log("Please specify a valid license name.");
 }
 
 cli();
