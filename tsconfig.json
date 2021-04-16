@@ -1,10 +1,11 @@
 {
-    "compilerOptions": {
-        "noImplicitUseStrict": true,
-        "resolveJsonModule": true,
-        "module": "commonjs",
-        "target": "ES5",
-        "outDir": "dist",
-        "rootDir": "."
-    }
+	"compilerOptions": {
+		"noImplicitUseStrict": true,
+		"resolveJsonModule": true,
+		"declaration": true,
+		"module": "commonjs",
+		"target": "ES6",
+		"outDir": "dist",
+		"rootDir": "./src"
+	}
 }
