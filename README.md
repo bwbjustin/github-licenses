@@ -1,6 +1,12 @@
 # github-licenses
 Get all the licenses that are included in GitHub.
 
+[![npm](https://img.shields.io/npm/v/github-licenses)](https://npm.im/github-licenses)
+[![npm](https://img.shields.io/npm/dt/github-licenses)](https://npm.im/github-licenses)
+[![David](https://img.shields.io/david/bwbjustin/github-licenses)](https://david-dm.org/bwbjustin/github-licenses)
+[![GitHub](https://img.shields.io/github/license/bwbjustin/github-licenses)](https://github.com/bwbjustin/github-licenses/blob/master/LICENSE)  
+[![NPM](https://nodei.co/npm/github-licenses.png)](https://nodei.co/npm/github-licenses/)
+
 # Licenses
 All licenses are functions that are listed below. Some take the name, and optionally, the year. For example:
 ```js
@@ -11,7 +17,7 @@ Licenses.MIT("Deez Nuts", 2012); // copyright 2012
 
 The list of licenses that are included are:
 
-License | Function | Takes name/year
+License | Function | Takes name + year
 --------|----------|----------------
 Academic Free License v3.0 | AFL | No
 Apache license 2.0 | APACHE | No
