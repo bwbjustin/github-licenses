@@ -1,8 +1,8 @@
 {
 	"compilerOptions": {
 		"noImplicitUseStrict": true,
-		"resolveJsonModule": true,
 		"declaration": true,
+		"resolveJsonModule": true,
 		"module": "commonjs",
 		"target": "ES6",
 		"rootDir": "src",
