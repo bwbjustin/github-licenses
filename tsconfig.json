@@ -5,7 +5,7 @@
 		"declaration": true,
 		"module": "commonjs",
 		"target": "ES6",
-		"outDir": "dist",
-		"rootDir": "./src"
+		"rootDir": "src",
+		"outDir": "dist"
 	}
 }

@@ -1,14 +1,16 @@
 {
   "name": "github-licenses",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "Get all the licenses that are included in GitHub.",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
+    "test": "mocha dist/test",
     "build": "tsc",
     "lint": "eslint --ext .ts ."
   },
   "bin": {
-    "licenses": "dist/bin/cli.js"
+    "licenses": "bin/licenses"
   },
   "repository": "github:bwbjustin/github-licenses",
   "keywords": [
@@ -21,10 +23,11 @@
   "author": "Justin Pridgen",
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^14.14.37",
     "arg": "^5.0.0"
   },
   "devDependencies": {
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.41",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "eslint": "^7.24.0",

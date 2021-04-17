@@ -20,12 +20,12 @@ The list of licenses that are included are:
 License | Function | Takes name + year
 --------|----------|----------------
 Academic Free License v3.0 | AFL | No
-Apache license 2.0 | APACHE | No
-Artistic license 2.0 | ART | No
+Apache License 2.0 | APACHE | No
+Artistic License 2.0 | ART | No
 Boost Software License 1.0 | BSL | No
-BSD 2-clause "Simplified" license | BSD2C | Yes
-BSD 3-clause "New" or "Revised" license | BSD3C | Yes
-BSD 3-clause Clear license | BSD3CC | Yes
+BSD 2-clause "Simplified" License | BSD2C | Yes
+BSD 3-clause "New" or "Revised" License | BSD3C | Yes
+BSD 3-clause Clear License | BSD3CC | Yes
 Creative Commons Zero v1.0 Universal | CC0 | No
 Creative Commons Attribution 4.0 | CCBY | No
 Creative Commons Attribution Share Alike 4.0 | CCBYSA | No

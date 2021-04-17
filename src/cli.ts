@@ -1,17 +1,7 @@
-#!/usr/bin/env node
 import fs = require("fs");
 import path = require("path");
 import arg = require("arg");
-import Licenses = require("..");
-
-const args = arg({
-	"--output": String,
-	"--name": String,
-	"--year": Number,
-	"-o": "--output",
-	"-n": "--name",
-	"-y": "--year"
-});
+import Licenses = require(".");
 
 const licenses = [
 	"AFL",
@@ -47,7 +37,16 @@ const licenses = [
 	"ZLIB"
 ]
 
-function cli() {
+function cli(argv: string[]) {
+	let args = arg({
+		"--output": String,
+		"--name": String,
+		"--year": Number,
+		"-o": "--output",
+		"-n": "--name",
+		"-y": "--year"
+	}, { argv });
+
 	if (!process.argv[2]) console.log([
 		"Format: licenses (license) (option(s))",
 		"",
@@ -101,4 +100,4 @@ function cli() {
 	} else if (!licenses.some(x => new RegExp(args._[0], "i").test(x))) console.log("Please specify a valid license name.");
 }
 
-cli();
+export = cli
