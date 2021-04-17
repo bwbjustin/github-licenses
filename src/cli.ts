@@ -2,40 +2,7 @@ import fs = require("fs");
 import path = require("path");
 import arg = require("arg");
 import Licenses = require(".");
-
-const licenses = [
-	"AFL",
-	"APACHE",
-	"ART",
-	"BSL",
-	"BSD2C",
-	"BSD3C",
-	"BSD3CC",
-	"CC0",
-	"CCBY",
-	"CCBYSA",
-	"WTFPL",
-	"ECL",
-	"EPL1",
-	"EPL2",
-	"EUPL",
-	"AGPL",
-	"GPL2",
-	"GPL3",
-	"LGPL21",
-	"LGPL3",
-	"ISC",
-	"LPPL",
-	"MSPL",
-	"MIT",
-	"MPL",
-	"OSL",
-	"POSTSQL",
-	"OFL",
-	"NCSA",
-	"UNL",
-	"ZLIB"
-]
+import licenses = require("./licenses.json");
 
 function cli(argv: string[]) {
 	let args = arg({
@@ -88,7 +55,7 @@ function cli(argv: string[]) {
 		"The Unlicense",
 		"zLib License"
 	].join("\n"));
-	else if (licenses.some(x => new RegExp(args._[0], "i").test(x))) {
+	else if (Object.keys(licenses).some(x => new RegExp(args._[0], "i").test(x))) {
 		if (!args["--name"]) return console.log("Please specify a name.");
 		try {
 			fs.writeFileSync(args["--output"] || path.resolve(process.cwd(), "LICENSE"), Licenses[args._[0]](args["--name"], args["--year"] || new Date().getFullYear()));
@@ -97,7 +64,7 @@ function cli(argv: string[]) {
 			if (error.errno == -4068) console.log("This is the name of a directory! Please try again.");
 			else console.log("An error occurred when writing the license! Please try again.");
 		}
-	} else if (!licenses.some(x => new RegExp(args._[0], "i").test(x))) console.log("Please specify a valid license name.");
+	} else if (!Object.keys(licenses).some(x => new RegExp(args._[0], "i").test(x))) console.log("Please specify a valid license name.");
 }
 
 export = cli
