@@ -11,8 +11,18 @@ Get all the licenses that are included in GitHub.
 All licenses are functions that are listed below. Some take the name, and optionally, the year. For example:
 ```js
 const Licenses = require("github-licenses");
-Licenses.MIT("Deez Nuts"); // copyright 2021
-Licenses.MIT("Deez Nuts", 2012); // copyright 2012
+Licenses.MIT("Deez Nuts"); 
+/* MIT License
+
+Copyright (c) 2021 Deez Nuts
+
+Permission is hereby granted...*/
+Licenses.MIT("Deez Nuts", 2012);
+/* MIT License
+
+Copyright (c) 2012 Deez Nuts
+
+Permission is hereby granted...*/
 ```
 
 The list of licenses that are included are:
