@@ -4,6 +4,7 @@ Get all the licenses that are included in GitHub.
 [![npm](https://img.shields.io/npm/v/github-licenses)](https://npm.im/github-licenses)
 [![npm](https://img.shields.io/npm/dt/github-licenses)](https://npm.im/github-licenses)
 [![David](https://img.shields.io/david/bwbjustin/github-licenses)](https://david-dm.org/bwbjustin/github-licenses)
+[![David](https://img.shields.io/david/dev/bwbjustin/github-licenses)](https://david-dm.org/bwbjustin/github-licenses)
 [![GitHub](https://img.shields.io/github/license/bwbjustin/github-licenses)](https://github.com/bwbjustin/github-licenses/blob/master/LICENSE)  
 [![NPM](https://nodei.co/npm/github-licenses.png)](https://nodei.co/npm/github-licenses/)
 
@@ -49,10 +50,10 @@ GNU General Public License v2.0 | GPL2 | No
 GNU General Public License v3.0 | GPL3 | No
 GNU Lesser General Public License v2.1 | LGPL21 | No
 GNU Lesser General Public License v3.0 | LGPL3 | No
-ISC | ISC | Yes
+ISC License | ISC | Yes
 LaTeX Project Public License v1.3c | LPPL | No
 Microsoft Public License | MSPL | No
-MIT | MIT | Yes
+MIT License | MIT | Yes
 Mozilla Public License 2.0 | MPL | No
 Open Software License 3.0 | OSL | No
 PostgreSQL License | POSTSQL | Yes
