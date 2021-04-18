@@ -1,9 +1,9 @@
 {
   "name": "github-licenses",
-  "version": "2.6.2",
+  "version": "2.6.3",
   "description": "Get all the licenses that are included in GitHub.",
   "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "mocha dist/test",
     "build": "tsc",
@@ -33,6 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "eslint": "^7.24.0",
+    "typedoc": "^0.20.35",
     "typescript": "^4.2.4"
   }
 }

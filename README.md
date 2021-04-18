@@ -76,4 +76,4 @@ Name | Description
 --year/-y? | The year the license was created
 
 # License
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the [MIT License](https://github.com/bwbjustin/github-licenses/blob/master/LICENSE).
