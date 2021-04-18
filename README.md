@@ -4,7 +4,7 @@ Get all the licenses that are included in GitHub.
 [![npm](https://img.shields.io/npm/v/github-licenses)](https://npm.im/github-licenses)
 [![npm](https://img.shields.io/npm/dt/github-licenses)](https://npm.im/github-licenses)
 [![David](https://img.shields.io/david/bwbjustin/github-licenses)](https://david-dm.org/bwbjustin/github-licenses)
-[![David](https://img.shields.io/david/dev/bwbjustin/github-licenses)](https://david-dm.org/bwbjustin/github-licenses)
+[![David](https://img.shields.io/david/dev/bwbjustin/github-licenses)](https://david-dm.org/bwbjustin/github-licenses?type=dev)
 [![GitHub](https://img.shields.io/github/license/bwbjustin/github-licenses)](https://github.com/bwbjustin/github-licenses/blob/master/LICENSE)  
 [![NPM](https://nodei.co/npm/github-licenses.png)](https://nodei.co/npm/github-licenses/)
 

@@ -1,5 +1,8 @@
 import licenses = require("./licenses.json");
 
+/**
+ * The Licenses class, no constructor.
+ */
 class Licenses {
 	/**
 	 * The Academic Free License v3.0
@@ -32,7 +35,7 @@ class Licenses {
 	/**
 	 * The BSD 2-clause "Simplified" License
 	 * @param {string} name The name of the licensor
-	 * @param {number} [year] - The year the license was created
+	 * @param {number} year The year the license was created
 	 * @returns {string}
 	 */
 	static BSD2C(name: string, year?: number): string {
@@ -41,7 +44,7 @@ class Licenses {
 	/**
 	 * The BSD 3-clause "New" or "Revised" License
 	 * @param {string} name The name of the licensor
-	 * @param {number} [year] - The year the license was created
+	 * @param {number} year The year the license was created
 	 * @returns {string}
 	 */
 	static BSD3C(name: string, year?: number): string {
@@ -50,7 +53,7 @@ class Licenses {
 	/**
 	 * The BSD 3-clause Clear License
 	 * @param {string} name The name of the licensor
-	 * @param {number} [year] - The year the license was created
+	 * @param {number} year The year the license was created
 	 * @returns {string}
 	 */
 	static BSD3CC(name: string, year?: number): string {
@@ -150,7 +153,7 @@ class Licenses {
 	/**
 	 * The ISC License
 	 * @param {string} name The name of the licensor
-	 * @param {number} [year] - The year the license was created
+	 * @param {number} year The year the license was created
 	 * @returns {string}
 	 */
 	static ISC(name: string, year?: number): string {
@@ -173,7 +176,7 @@ class Licenses {
 	/**
 	 * The MIT License
 	 * @param {string} name The name of the licensor
-	 * @param {number} [year] - The year the license was created
+	 * @param {number} year The year the license was created
 	 * @returns {string}
 	 */
 	static MIT(name: string, year?: number): string {
@@ -196,7 +199,7 @@ class Licenses {
 	/**
 	 * The PostgreSQL License
 	 * @param {string} name The name of the licensor
-	 * @param {number} [year] - The year the license was created
+	 * @param {number} year The year the license was created
 	 * @returns {string}
 	 */
 	static POSTSQL(name: string, year?: number): string {
@@ -205,7 +208,7 @@ class Licenses {
 	/**
 	 * The SIL Open Font License 1.1
 	 * @param {string} name The name of the licensor
-	 * @param {number} [year] - The year the license was created
+	 * @param {number} year The year the license was created
 	 * @returns {string}
 	 */
 	static OFL(name: string, year?: number): string {
@@ -214,7 +217,7 @@ class Licenses {
 	/**
 	 * The University of Illinois/NCSA Open Source License
 	 * @param {string} name The name of the licensor
-	 * @param {number} [year] - The year the license was created
+	 * @param {number} year The year the license was created
 	 * @returns {string}
 	 */
 	static NCSA(name: string, year?: number): string {
@@ -230,7 +233,7 @@ class Licenses {
 	/**
 	 * The zLib License
 	 * @param {string} name The name of the licensor
-	 * @param {number} [year] - The year the license was created
+	 * @param {number} year The year the license was created
 	 * @returns {string}
 	 */
 	static ZLIB(name: string, year?: number): string {

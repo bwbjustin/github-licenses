@@ -67,4 +67,4 @@ function cli(argv: string[]) {
 	} else if (!Object.keys(licenses).some(x => new RegExp(args._[0], "i").test(x))) console.log("Please specify a valid license name.");
 }
 
-export = cli
+export = cli;

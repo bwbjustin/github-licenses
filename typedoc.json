@@ -1,0 +1,3 @@
+{
+	"exclude": ["src/cli.ts", "src/test/index.ts"]
+}
