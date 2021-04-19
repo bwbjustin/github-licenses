@@ -1,243 +1,202 @@
 import licenses = require("./licenses.json");
 
 /**
- * The Licenses class, no constructor.
+ * The Licenses class, that has all the licenses included in GitHub.
  */
 class Licenses {
 	/**
 	 * The Academic Free License v3.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static AFL(): string {
-		return licenses.AFL;
-	}
+	AFL: string;
 	/**
 	 * The Apache License 2.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static APACHE(): string {
-		return licenses.APACHE;
-	}
+	APACHE: string;
 	/**
 	 * The Artistic License 2.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static ART(): string {
-		return licenses.ART;
-	}
+	ART: string;
 	/**
 	 * The Boost Software License 1.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static BSL(): string {
-		return licenses.BSL;
-	}
+	BSL: string;
 	/**
 	 * The BSD 2-clause "Simplified" License
-	 * @param {string} name The name of the licensor
-	 * @param {number} year The year the license was created
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static BSD2C(name: string, year?: number): string {
-		return licenses.BSD2C.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
-	}
+	BSD2C: string;
 	/**
 	 * The BSD 3-clause "New" or "Revised" License
-	 * @param {string} name The name of the licensor
-	 * @param {number} year The year the license was created
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static BSD3C(name: string, year?: number): string {
-		return licenses.BSD3C.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
-	}
+	BSD3C: string;
 	/**
 	 * The BSD 3-clause Clear License
-	 * @param {string} name The name of the licensor
-	 * @param {number} year The year the license was created
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static BSD3CC(name: string, year?: number): string {
-		return licenses.BSD3CC.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
-	}
+	BSD3CC: string;
 	/**
 	 * The Creative Commons Zero v1.0 Universal
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static CC0(): string {
-		return licenses.CC0;
-	}
+	CC0: string;
 	/**
 	 * The Creative Commons Attribution 4.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static CCBY(): string {
-		return licenses.CCBY;
-	}
+	CCBY: string;
 	/**
 	 * The Creative Commons Attribution Share Alike 4.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static CCBYSA(): string {
-		return licenses.CCBYSA;
-	}
+	CCBYSA: string;
 	/**
 	 * The Do What The F You Want To Public License
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static WTFPL(): string {
-		return licenses.WTFPL;
-	}
+	WTFPL: string;
 	/**
 	 * The Educational Community License v2.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static ECL(): string {
-		return licenses.ECL;
-	}
+	ECL: string;
 	/**
 	 * The Eclipse Public License 1.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static EPL1(): string {
-		return licenses.EPL1;
-	}
+	EPL1: string;
 	/**
 	 * The Eclipse Public License 2.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static EPL2(): string {
-		return licenses.EPL2;
-	}
+	EPL2: string;
 	/**
 	 * The European Union Public License 1.1
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static EUPL(): string {
-		return licenses.EUPL;
-	}
+	EUPL: string;
 	/**
 	 * The GNU Affero General Public License v3.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static AGPL(): string {
-		return licenses.AGPL;
-	}
+	AGPL: string;
 	/**
 	 * The GNU General Public License v2.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static GPL2(): string {
-		return licenses.GPL2;
-	}
+	GPL2: string;
 	/**
 	 * The GNU General Public License v3.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static GPL3(): string {
-		return licenses.GPL3;
-	}
+	GPL3: string;
 	/**
 	 * The GNU Lesser General Public License v2.1
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static LGPL21(): string {
-		return licenses.LGPL21;
-	}
+	LGPL21: string;
 	/**
 	 * The GNU Lesser General Public License v3.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static LGPL3(): string {
-		return licenses.LGPL3;
-	}
+	LGPL3: string;
 	/**
 	 * The ISC License
-	 * @param {string} name The name of the licensor
-	 * @param {number} year The year the license was created
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static ISC(name: string, year?: number): string {
-		return licenses.ISC.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
-	}
+	ISC: string;
 	/**
 	 * The LaTeX Project Public License v1.3c
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static LPPL(): string {
-		return licenses.LPPL;
-	}
+	LPPL: string;
 	/**
 	 * The Microsoft Public License
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static MSPL(): string {
-		return licenses.MSPL;
-	}
+	MSPL: string;
 	/**
 	 * The MIT License
-	 * @param {string} name The name of the licensor
-	 * @param {number} year The year the license was created
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static MIT(name: string, year?: number): string {
-		return licenses.MIT.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
-	}
+	MIT: string;
 	/**
 	 * The Mozilla Public License 2.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static MPL(): string {
-		return licenses.MPL;
-	}
+	MPL: string;
 	/**
 	 * The Open Software License 3.0
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static OSL(): string {
-		return licenses.OSL;
-	}
+	OSL: string;
 	/**
 	 * The PostgreSQL License
-	 * @param {string} name The name of the licensor
-	 * @param {number} year The year the license was created
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static POSTSQL(name: string, year?: number): string {
-		return licenses.POSTSQL.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
-	}
+	POSTSQL: string;
 	/**
 	 * The SIL Open Font License 1.1
-	 * @param {string} name The name of the licensor
-	 * @param {number} year The year the license was created
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static OFL(name: string, year?: number): string {
-		return licenses.OFL.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
-	}
+	OFL: string;
 	/**
 	 * The University of Illinois/NCSA Open Source License
-	 * @param {string} name The name of the licensor
-	 * @param {number} year The year the license was created
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static NCSA(name: string, year?: number): string {
-		return licenses.NCSA.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
-	}
+	NCSA: string;
 	/**
 	 * The Unlicense
-	 * @returns {string}
+	 * @type {string}
 	 */
-	static UNL(): string {
-		return licenses.UNL;
-	}
+	UNL: string;
 	/**
 	 * The zLib License
+	 * @type {string}
+	 */
+	ZLIB: string;
+
+	/**
+ 	 * The Licenses constructor.
 	 * @param {string} name The name of the licensor
 	 * @param {number} year The year the license was created
-	 * @returns {string}
-	 */
-	static ZLIB(name: string, year?: number): string {
-		return licenses.ZLIB.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
+ 	 */
+	constructor(name: string, year?: number) {
+		this.AFL = licenses.AFL;
+		this.APACHE = licenses.APACHE;
+		this.ART = licenses.ART;
+		this.BSL = licenses.BSL;
+		this.BSD2C = licenses.BSD2C.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
+		this.BSD3C = licenses.BSD3C.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
+		this.BSD3CC = licenses.BSD3CC.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
+		this.CC0 = licenses.CC0;
+		this.CCBY = licenses.CCBY;
+		this.CCBYSA = licenses.CCBYSA;
+		this.WTFPL = licenses.WTFPL;
+		this.ECL = licenses.ECL;
+		this.EPL1 = licenses.EPL1;
+		this.EPL2 = licenses.EPL2;
+		this.EUPL = licenses.EUPL;
+		this.AGPL = licenses.AGPL;
+		this.GPL2 = licenses.GPL2;
+		this.GPL3 = licenses.GPL3;
+		this.LGPL21 = licenses.LGPL21;
+		this.LGPL3 = licenses.LGPL3;
+		this.ISC = licenses.ISC.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
+		this.LPPL = licenses.LPPL;
+		this.MSPL = licenses.MSPL;
+		this.MIT = licenses.MIT.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
+		this.MPL = licenses.MPL;
+		this.OSL = licenses.OSL;
+		this.POSTSQL = licenses.POSTSQL.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
+		this.OFL = licenses.OFL.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
+		this.NCSA = licenses.NCSA.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
+		this.UNL = licenses.UNL;
+		this.ZLIB = licenses.ZLIB.replace(/\[year\]/g, (year || new Date().getFullYear()).toString()).replace(/\[fullname\]/g, name);
 	}
 }
 

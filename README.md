@@ -9,16 +9,21 @@ Get all the licenses that are included in GitHub.
 [![NPM](https://nodei.co/npm/github-licenses.png)](https://nodei.co/npm/github-licenses/)
 
 # Licenses
-All licenses are functions that are listed below. Some take the name, and optionally, the year. For example:
+All licenses are properties of an initiated License class, which takes the name, and optionally, the year. For example:
 ```js
 const Licenses = require("github-licenses");
-Licenses.MIT("Deez Nuts"); 
+const licenses = new Licenses("Deez Nuts")
+licenses.MIT; 
 /* MIT License
 
 Copyright (c) 2021 Deez Nuts
 
 Permission is hereby granted...*/
-Licenses.MIT("Deez Nuts", 2012);
+```
+```js
+const Licenses = require("github-licenses");
+const licenses = new Licenses("Deez Nuts", 2012)
+licenses.MIT;
 /* MIT License
 
 Copyright (c) 2012 Deez Nuts

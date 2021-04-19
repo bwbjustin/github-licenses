@@ -2,7 +2,7 @@ import fs = require("fs");
 import path = require("path");
 import arg = require("arg");
 import Licenses = require(".");
-import licenses = require("./licenses.json");
+import _licenses = require("./licenses.json");
 
 function cli(argv: string[]) {
 	let args = arg({
@@ -55,16 +55,18 @@ function cli(argv: string[]) {
 		"The Unlicense",
 		"zLib License"
 	].join("\n"));
-	else if (Object.keys(licenses).some(x => new RegExp(args._[0], "i").test(x))) {
+	else if (Object.keys(_licenses).some(x => new RegExp(args._[0], "i").test(x))) {
+		let licenses = new Licenses(args["--name"], args["--year"] || new Date().getFullYear())
+
 		if (!args["--name"]) return console.log("Please specify a name.");
 		try {
-			fs.writeFileSync(args["--output"] || path.resolve(process.cwd(), "LICENSE"), Licenses[args._[0]](args["--name"], args["--year"] || new Date().getFullYear()));
+			fs.writeFileSync(args["--output"] || path.resolve(process.cwd(), "LICENSE"), licenses[args._[0]]);
 			console.log(`License written to ${args["--output"] || path.resolve(process.cwd(), "LICENSE")}.`);
 		} catch (error) {
 			if (error.errno == -4068) console.log("This is the name of a directory! Please try again.");
 			else console.log("An error occurred when writing the license! Please try again.");
 		}
-	} else if (!Object.keys(licenses).some(x => new RegExp(args._[0], "i").test(x))) console.log("Please specify a valid license name.");
+	} else if (!Object.keys(_licenses).some(x => new RegExp(args._[0], "i").test(x))) console.log("Please specify a valid license name.");
 }
 
 export = cli;
