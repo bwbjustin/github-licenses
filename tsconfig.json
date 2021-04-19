@@ -8,5 +8,8 @@
 		"rootDir": "src",
 		"outDir": "dist"
 	},
-	"exclude": ["src/typedoc-plugin.ts", "dist/cli.d.ts", "dist/index.d.ts"]
+	"files": [
+		"src/index.ts",
+		"src/cli.ts"
+	]
 }
