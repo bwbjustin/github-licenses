@@ -1,6 +1,6 @@
 {
   "name": "github-licenses",
-  "version": "2.7.1",
+  "version": "2.7.3",
   "description": "Get all the licenses that are included in GitHub.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
