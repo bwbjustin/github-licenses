@@ -1,20 +1,20 @@
 {
   "name": "github-licenses",
-  "version": "2.8.0",
+  "version": "3.0.0",
   "description": "Get all the licenses that are included in GitHub.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "mocha src/test",
     "build": "tsc",
-    "docs": "typedoc src",
+    "docs": "typedoc src/index.ts",
     "lint": "eslint --ext .ts ."
   },
   "bin": {
     "licenses": "bin/licenses"
   },
-  "repository": "github:bwbjustin/github-licenses",
-  "homepage": "https://bwbjustin.github.io/github-licenses",
+  "repository": "github:hiimjustin000/github-licenses",
+  "homepage": "https://hiimjustin000.github.io/github-licenses",
   "keywords": [
     "license",
     "licenses",

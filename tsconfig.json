@@ -1,15 +1,16 @@
 {
-	"compilerOptions": {
-		"noImplicitUseStrict": true,
-		"resolveJsonModule": true,
-		"declaration": true,
-		"module": "commonjs",
-		"target": "ES6",
-		"rootDir": "src",
-		"outDir": "dist"
-	},
-	"files": [
-		"src/index.ts",
-		"src/cli.ts"
-	]
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "declaration": true,
+        "module": "commonjs",
+        "target": "ES2021",
+        "rootDir": "src",
+        "outDir": "dist"
+    },
+    "files": [
+        "src/index.ts",
+        "src/cli.ts"
+    ]
 }

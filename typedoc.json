@@ -1,4 +1,0 @@
-{
-	"exclude": ["src/cli.ts", "src/typedoc-plugin.ts", "src/test/index.ts"],
-	"plugin": "./src/typedoc-plugin.ts"
-}

@@ -65,7 +65,7 @@ PostgreSQL License | POSTSQL | Yes
 SIL Open Font License 1.1 | OFL | Yes
 University of Illinois/NCSA Open Source License | NCSA | Yes
 The Unlicense | UNL | No
-zLib License | ZLIB | Yes
+zlib License | ZLIB | Yes
 
 # CLI
 The CLI allows you to choose a license and write to a file. (Default: (cwd)/LICENSE)
